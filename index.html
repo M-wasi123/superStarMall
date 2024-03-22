@@ -5,23 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Star Mall</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<!-- mobile view navbar -->
+<div id="mobileNav" class="navdiv">
+    <div class="ssmlogo1">
+        <img id="logo" src="./ssm logo.png" alt="">
+        <i id="closeIcon" class="fa fa-close"></i>
+        </div>
+   
+<ul class="navlinks">
+    <li><a href="#">Home</a></li>
+<li class="dropdrown">
+<a id="dowIcon" toggle="dropdrown">Pages <i id="dowIcon" class="fa fa-angle-down"></i></a>
+<ul id="dropDrownLit" class="ul3">
+<li><a href=""> Fruits</a></li>
+<li><a href=""> Vegetables</a></li>
+<li><a href=""> Dry Fruits</a></li>
+<li><a href=""> Cosmetics</a></li>
+<li><a href=""> Accessories</a></li>
+</ul>
+</li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Sign In</a></li>
+    <li><a href="#">Sign Up</a></li>
+</ul>
+</div>
+</div>
+    <!-- desktop view navbar -->
     <nav class="navbar">
         <div class="ssmlogo">
 <img id="logo" src="./ssm logo.png" alt="">
 </div>
 <div class="navlink">
-    <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Pages</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Contact Us</a></li>
-        <li><a href="">Sign In</a></li>
-        <li><a href="">Sign Up</a></li>
+    <ul class="ul">
+        <li><a href="#">Home</a></li>
+<li class="dropdrown">
+<a id="downIcon" toggle="dropdrown">Pages <i id="downIcon" class="fa fa-angle-down"></i></a>
+<ul id="dropDrownList" class="ul2">
+<li><a href=""> Fruits</a></li>
+<li><a href=""> Vegetables</a></li>
+<li><a href=""> Dry Fruits</a></li>
+<li><a href=""> Cosmetics</a></li>
+<li><a href=""> Accessories</a></li>
+</ul>
+</li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Sign Up</a></li>
     </ul>
+    <i id="bar" class='fa fa-bars'></i>
 </div>
     </nav>
-    <script src="app.js"></script>
+    <!-- main images slider -->
+    <div class="container">
+    <section class="wrapper">
+        <i id="arrowIcon" class="fa fa-arrow-left button"></i>
+        <div class="image-content">
+<div id="slider" class="slider">
+<img id="sliderImage1" src="./dried-fruits-nuts-mix.jpg" alt="" srcset="">
+<img id="sliderImage2" src="./fruit and vegetable.jpg" alt="" srcset="">
+<img id="sliderImage3" src="./images.jpg" alt="" srcset="">
+<img id="sliderImage4" src="./unnamed-3.jpg" alt="" srcset="">
+</div>
+</div>
+<i id="arrowIcon" class="fa fa-arrow-right button"></i>
+</section>
+</div>
+    <script src="app.js" defer></script>
 </body>
 </html>
