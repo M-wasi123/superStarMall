@@ -41,7 +41,14 @@ navClose.addEventListener('click', function () {
 })
 var wrapper = document.querySelector('.wrapper');
     slider = document.getElementById('slider');
-    arrowButton = document.querySelector('arrowIcon');
-    imageSlider = document.getElementById('slider');
-    
+    arrowButton = document.querySelectorAll('arrowIcon');
+    imageSlider = document.querySelectorAll('#sliderImage');
+
+    let imageIndex = 1;
+    intervalId;
+
+    var autoslide = () => {
+        intervalId = setInterval(() => slideImage);
+    }
+
 

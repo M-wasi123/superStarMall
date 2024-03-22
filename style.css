@@ -166,20 +166,20 @@ i.button:hover{
     border-radius: 10px;
 }
 
-#sliderImage1{
+.sliderImage1{
     width: 100%;
     object-fit: contain;
 }
-#sliderImage2{
+.sliderImage2{
     width: 100%;
     object-fit: contain;
 }
-#sliderImage3{
+.sliderImage3{
     width: 100%;
     height: 54vh;
     object-fit: contain;
 }
-#sliderImage4{
+.sliderImage4{
     width: 100%;
     height: 54vh;
     object-fit: contain;
