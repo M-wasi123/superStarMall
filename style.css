@@ -1,0 +1,43 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 20px 50px;
+}
+.ssmlogo{
+    width: 100%;
+}
+#logo{
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    object-fit: contain;
+}
+.navlink{
+    width: 100%;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+gap: 20px;
+}
+ul > li{
+    list-style: none;
+}
+li > a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+@media screen {
+    
+}
