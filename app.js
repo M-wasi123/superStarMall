@@ -39,16 +39,23 @@ navClose.addEventListener('click', function () {
         mobileNav.style.display = 'block'
     }
 })
-var wrapper = document.querySelector('.wrapper');
-    slider = document.getElementById('slider');
-    arrowButton = document.querySelectorAll('arrowIcon');
-    imageSlider = document.querySelectorAll('#sliderImage');
+const wrapper = document.querySelector('.wrapper');
+const slider = document.getElementById('#carousel');
+const arrowButton = document.querySelectorAll('#arrowIcon');
+const imageSlider = document.querySelectorAll('#carouselImage');
 
     let imageIndex = 1;
-    intervalId;
+      intervalId;
 
-    var autoslide = () => {
-        intervalId = setInterval(() => slideImage);
+    const autoslide = () => {
+        intervalId = setInterval(() => slideImage(++imageIndex), 2000);
     }
 
+    autoslide();
+
+const slideImage = () => {
+imageIndex = imageIndex === imageSlider.length ? 0 : imageIndex < 0 ? imageSlider.length -1 : imageIndex;
+
+slider.style.transform = `transform(-${imageIndex * 100}%)`
+};
 
